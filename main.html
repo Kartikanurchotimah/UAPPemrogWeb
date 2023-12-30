@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAP WEB</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Kode</th>
+          <th>Barang</th>
+          <th>Harga</th>
+        </tr>
+        <th>001</th>
+        <th>Barang A</th>
+        <th>10000</th>
+      </thead>
+      <tbody id="daftarbarang"></tbody>
+    </table>
+
+    <h1>Inputan User</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Masukkan Kode</td>
+          <td>:</td>
+          <td><input type="text" id="angka1" /></td>
+        </tr>
+        <tr>
+          <td>Banyak Barang</td>
+          <td>:</td>
+          <td><input type="text" id="angka2" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="Tambah()">Sumbit</button>
+          </td>
+        </tr>
+      </thead>
+    </table>
+
+    <script>
+      const barang = {
+        "001": { nama: "A", harga: 10000 },
+        "002": { nama: "B", harga: 20000 },
+        "003": { nama: "C", harga: 30000 },
+      };
+
+      function tampilkanDaftarBarang() {
+        const daftarBarangElement = document.getElementById("daftarbarang");
+
+        for (const kode in barang) {
+          const { nama, harga } = barang[kode];
+          const row = document.createElement("tr");
+          const kodeCol = document.createElement("td");
+
+          function tampilkanHargaBarang() {}
+        }
+      }
+    </script>
+  </body>
+</html>
